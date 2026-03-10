@@ -214,7 +214,7 @@ if includeOct1979 == False:
     RR_data = RR_data[RR_data['MTGDATE'] != '1979-10-06']
 
 # Download the Wu-Xia Shadow Rate Data
-url = 'https://www.atlantafed.org/-/media/documents/datafiles/cqer/research/wu-xia-shadow-federal-funds-rate/WuXiaShadowRate.xlsx'
+url = 'https://www.atlantafed.org/-/media/Project/Atlanta/FRBA/Documents/datafiles/cqer/research/wu-xia-shadow-federal-funds-rate/WuXiaShadowRate.xlsx'
 response = requests.get(url, allow_redirects=True)
 
 open('data/WuXiaShadowRate.xlsx', 'wb').write(response.content)
